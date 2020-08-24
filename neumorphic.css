@@ -138,5 +138,12 @@ input[type="checkbox"]:checked:before{
 }
 
 .players{
-    /* background-color:red; */
+    background-color:red;
+    padding:1em 3em;
+}
+
+.player{
+    height: 1em;
+    background-color: white;
+    width:100%;
 }

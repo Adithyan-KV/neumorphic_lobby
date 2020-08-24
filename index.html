@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="neumorphic.css">
+    <script src="player-component.js"></script>
     <title>Lobby</title>
 </head>
 
@@ -27,7 +28,13 @@
                     </div>
                 </div>
             </div>
-            <class class="players"></class>
+            <class class="players">
+                <player-component></player-component>
+                <template id="player-component">
+                    <link rel="stylesheet" href="player-component.css">
+                    <div class="player-box">player</div>
+                </template>
+            </class>
         </div>
     </div>
 </body>
