@@ -30,9 +30,21 @@
             </div>
             <class class="players">
                 <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
+                <player-component></player-component>
                 <template id="player-component">
                     <link rel="stylesheet" href="player-component.css">
-                    <div class="player-box">player</div>
+                    <div class="player-box">
+                        <img src="image.jpeg">
+                        <div class="text">
+                            <div class="username">Username</div>
+                            <div class="status">joined</div>
+                        </div>
+                        <button type="submit" id="accept">&check;</button>
+                        <button type="submit" id="deny">&times;</button>
+                    </div>
                 </template>
             </class>
         </div>
