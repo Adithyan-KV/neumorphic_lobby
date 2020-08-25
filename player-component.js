@@ -21,6 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.remove();
                 })
             })
+
+            let add_button = this.shadowRoot.querySelector("#accept");
+            add_button.addEventListener('click', () => {
+                let parent_box = this.shadowRoot.querySelector('.player-box');
+                let status = this.shadowRoot.querySelector('.status');
+                status.innerHTML = 'joined';
+                parent_box.classList.add('joined');
+            })
         }
 
         disconnectedCallback() {

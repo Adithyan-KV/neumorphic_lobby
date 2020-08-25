@@ -6,6 +6,7 @@
     --dark-text: #868fa0;
     --light-blue: #56D6DD;
     --light-pink:#DB80DC;
+    --dark-pink:#E96667;
 }
 
 .player-box{
@@ -42,8 +43,12 @@
 
 .status{
     font-size:0.8em;
-    color:var(--light-blue);
+    color:var(--dark-pink);
     padding: 0.4em 0.1em;
+}
+
+.joined .status{
+    color:var(--light-blue);
 }
 
 button{
@@ -71,6 +76,10 @@ button:hover{
 
 #accept:hover{
     color:var(--light-blue);
+}
+
+.joined #accept{
+    opacity: 0;
 }
 
 button:active{
