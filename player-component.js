@@ -16,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
             let remove_button = this.shadowRoot.querySelector("#deny");
             remove_button.addEventListener('click', () => {
                 let parent_box = this.shadowRoot.querySelector('.player-box');
-                parent_box.remove()
-                console.log(parent_box)
+                parent_box.classList.add('removed')
+                parent_box.addEventListener('animationend', () => {
+                    this.remove();
+                })
             })
         }
 
